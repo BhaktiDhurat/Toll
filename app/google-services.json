@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "830714733148",
+    "firebase_url": "https://tollplaza-57285.firebaseio.com",
+    "project_id": "tollplaza-57285",
+    "storage_bucket": "tollplaza-57285.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830714733148:android:2484701cc1b0d1fa",
+        "android_client_info": {
+          "package_name": "collection.toll.online.com.onlinetollcollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830714733148-nbeg13g2j1fre6f4sg2vi6g8ab2n5e4j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "collection.toll.online.com.onlinetollcollection",
+            "certificate_hash": "021D47B1C4028A93220FB5763BBE1F2AD83EBFF4"
+          }
+        },
+        {
+          "client_id": "830714733148-9s803n54uu3ctmk2iihsgkl52cqt07si.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0TGwBeaK_T8C_00nOm1gdvQ1HSmH5_7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830714733148-9s803n54uu3ctmk2iihsgkl52cqt07si.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

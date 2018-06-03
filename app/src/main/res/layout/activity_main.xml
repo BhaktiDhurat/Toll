@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="collection.toll.online.com.onlinetollcollection.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <Button
+        android:textColor="#fff"
+        android:layout_margin="40dp"
+        android:background="@drawable/button480"
+        android:id="@+id/btnToll"
+        android:text="@string/my_toll_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textColor="#fff"
+        android:layout_margin="40dp"
+        android:background="@drawable/button480"
+        android:id="@+id/btnNearByLocation"
+        android:text="@string/get_near_by_locations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textColor="#fff"
+        android:layout_margin="40dp"
+        android:background="@drawable/button480"
+        android:id="@+id/lost_My_Vehicle"
+        android:text="@string/lost_my_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

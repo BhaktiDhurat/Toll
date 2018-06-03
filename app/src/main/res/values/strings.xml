@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OnlineTollCollection</string>
+    <string name="set_ip">Set IP</string>
+    <string name="logout">Log Out</string>
+    <string name="get_near_by_locations">Get Near By Locations</string>
+    <string name="lost_my_vehicle">Lost My Vehicle</string>
+    <string name="my_toll_qr_code">My Toll QR Code</string>
+</resources>
