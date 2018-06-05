@@ -35,7 +35,7 @@ String message=remoteMessage.getData().toString();
 
 
         //Calling method to generate notification
-        sendNotification(message);
+//        sendNotification(message);
     }
 
     //This method is only generating push notification

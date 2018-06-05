@@ -22,6 +22,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 
 import org.json.JSONException;
@@ -50,7 +52,6 @@ public class Activity_Login extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.activity_login);
         setTitle("LOGIN");
        //username initilization
@@ -71,11 +72,15 @@ public class Activity_Login extends ActionBarActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //get username and password from edittext and save in variable
                 strUserName=edtUserName.getText().toString();
                 strPassword=edtPassword.getText().toString();
-
+                FirebaseMessaging.getInstance().subscribeToTopic("message");
+                String token = FirebaseInstanceId.getInstance().getToken();
+                SharedPreferences sp=getSharedPreferences("fcmID",MODE_PRIVATE);
+                SharedPreferences.Editor edit=sp.edit();
+                edit.putString("fcmId",token);
+                edit.apply();
+                System.out.println("****************Token received..." + token);
                 if(!strUserName.equals(""))
                 {
 
@@ -141,8 +146,6 @@ public class Activity_Login extends ActionBarActivity {
                 Log.i("##", "##" + jsonObject.toString());
 
                 System.out.println("## response:" + jsonObject.toString());
-
-
 
                    if(jsonObject.getString("result").equals("success")){
 

@@ -17,20 +17,14 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
     @Override
     public void onTokenRefresh() {
-
         //Getting registration token
         String refreshedToken = FirebaseInstanceId.getInstance().getToken();
-
         //Displaying token on logcat
         Log.d("######", "Refreshed token: " + refreshedToken);
         SharedPreferences sp=getSharedPreferences("fcmID",MODE_PRIVATE);
         SharedPreferences.Editor edit=sp.edit();
         edit.putString("fcmId",refreshedToken);
         edit.apply();
-
-
     }
-
-
 
 }

@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "collection.toll.online.com.onlinetollcollection"
         minSdkVersion 15
@@ -37,5 +37,7 @@ dependencies {
     //  compile 'com.google.android.gms:play-services:10.0.1'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support:recyclerview-v7:25.1.0'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+
 }
 apply plugin: 'com.google.gms.google-services'

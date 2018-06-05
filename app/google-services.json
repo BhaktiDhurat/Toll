@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "830714733148",
-    "firebase_url": "https://tollplaza-57285.firebaseio.com",
-    "project_id": "tollplaza-57285",
-    "storage_bucket": "tollplaza-57285.appspot.com"
+    "project_number": "141355451157",
+    "firebase_url": "https://neural-mantra-191213.firebaseio.com",
+    "project_id": "neural-mantra-191213",
+    "storage_bucket": "neural-mantra-191213.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:830714733148:android:2484701cc1b0d1fa",
+        "mobilesdk_app_id": "1:141355451157:android:2484701cc1b0d1fa",
         "android_client_info": {
           "package_name": "collection.toll.online.com.onlinetollcollection"
         }
       },
       "oauth_client": [
         {
-          "client_id": "830714733148-nbeg13g2j1fre6f4sg2vi6g8ab2n5e4j.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "collection.toll.online.com.onlinetollcollection",
-            "certificate_hash": "021D47B1C4028A93220FB5763BBE1F2AD83EBFF4"
-          }
+          "client_id": "141355451157-3g1i29gttp5q8c3vkijh0bubdggkg9fb.apps.googleusercontent.com",
+          "client_type": 3
         },
         {
-          "client_id": "830714733148-9s803n54uu3ctmk2iihsgkl52cqt07si.apps.googleusercontent.com",
+          "client_id": "141355451157-jn598h5kke35r76ppb80ap0g6q98a3et.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "141355451157-3g1i29gttp5q8c3vkijh0bubdggkg9fb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD0TGwBeaK_T8C_00nOm1gdvQ1HSmH5_7U"
+          "current_key": "AIzaSyDCbjW4DO4mxwm5Pt2P6TiLqfTI2TVOyaE"
         }
       ],
       "services": {
@@ -37,13 +37,47 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "830714733148-9s803n54uu3ctmk2iihsgkl52cqt07si.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141355451157:android:99eb42b4faf32dd7",
+        "android_client_info": {
+          "package_name": "com.example.mahadev.fcmdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141355451157-3g1i29gttp5q8c3vkijh0bubdggkg9fb.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "141355451157-jn598h5kke35r76ppb80ap0g6q98a3et.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "141355451157-3g1i29gttp5q8c3vkijh0bubdggkg9fb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCbjW4DO4mxwm5Pt2P6TiLqfTI2TVOyaE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
