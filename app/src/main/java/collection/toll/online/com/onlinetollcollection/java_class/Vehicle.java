@@ -5,8 +5,18 @@ package collection.toll.online.com.onlinetollcollection.java_class;
  */
 
 public class Vehicle {
+
     // {"vehicle Type":"4 Wheeler","userVehicle":"bmw","vehicle id":"2"}
-String vehicleType,userVehicle,vehicleId;
+    String vehicleType, userVehicle, vehicleId;
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "vehicleType='" + vehicleType + '\'' +
+                ", userVehicle='" + userVehicle + '\'' +
+                ", vehicleId='" + vehicleId + '\'' +
+                '}';
+    }
 
     public Vehicle(String vehicleType, String userVehicle, String vehicleId) {
         this.vehicleType = vehicleType;

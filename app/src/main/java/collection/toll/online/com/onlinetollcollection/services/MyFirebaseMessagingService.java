@@ -55,28 +55,25 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         }
     }
 
-    //This method is only generating push notification
-    //It is same as we did in earlier posts
     private void sendNotification(JSONObject message) throws JSONException {
         String tollName, tollId;
         JSONArray jarr = message.getJSONArray("toll_location");
+        for (int i = 0; i < jarr.length(); i++) {
+            try {
+                JSONObject jsonObject = jarr.getJSONObject(0);
+                tollName = jsonObject.getString("TollName");
+                tollId = jsonObject.getInt("toll id") + "";
 
-        try {
-//            JSONObject jsonObject = new JSONObject();
-            JSONObject jsonObject = jarr.getJSONObject(0);
+                if (!tollId.equals(previousTollId)) {
+                    previousTollId = tollId;
+                    notification(tollName, tollId);
+                }
 
-            tollName = jsonObject.getString("TollName");
-            tollId = jsonObject.getInt("toll id") + "";
-            if (!tollId.equals(previousTollId)) {
-                previousTollId = tollId;
                 notification(tollName, tollId);
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
-
-            notification(tollName, tollId);
-        } catch (JSONException e) {
-            e.printStackTrace();
         }
-
     }
 
     public void notification(String tollName, String tollId) {
